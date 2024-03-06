@@ -1,3 +1,10 @@
+    
+    
+   
+
+
+
+
 //stampa i numeri da 1 a 100
 //- crea una variabile n che indichi in numero di ripetizioni
 
@@ -50,4 +57,28 @@
 
 //ALTRIMENTI stampa il numero normalmente
       console.log(nResult)
+    
+
+
+//BONUS 1
+//crea una variabile da usare come contenitore in html
+        let displayElement = document.querySelector('.table')
+
+//crea nel DOM un elemento div con la classe container
+
+        const containerElement = document.createElement('div')
+	    
+
+//assegna all'elemento div la classe "container"
+
+        containerElement.classList.add('container')
+//inserisci nel container il risultato n
+	    containerElement.innerHTML = nResult
+
+//fai sì che il risultato n compaia nell'html
+        displayElement.append(containerElement)
+
+
+        console.dir(containerElement)
+
     }
