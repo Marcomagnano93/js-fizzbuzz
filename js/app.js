@@ -1,10 +1,27 @@
-    
-    
-   
+//****************BONUS 1A******************
+
+//seleziona una classe da usare come contenitore in html
+        let displayElement = document.querySelector('.table') //string
+
+//crea nel DOM un elemento div
+
+        const containerElement = document.createElement('div') //string
+	    
+
+//assegna all'elemento div la classe "container"
+
+        containerElement.classList.add('container')
+
+//fai sì che il risultato n compaia nell'html
+    //-crea una ul che possa contenere i li con i nResult
+        containerElement.innerHTML = `<ul class="numbers py-4 row gap-2"></ul>`
+    //-fai apparire il containter con al suo interno l'ul in html
+        displayElement.append(containerElement)
 
 
 
 
+//CONSEGNA PRINCIPALE
 //stampa i numeri da 1 a 100
 //- crea una variabile n che indichi in numero di ripetizioni
 
@@ -26,6 +43,8 @@
 //per i multipli di 3 stampa “Fizz” al posto del numero
 //per i multipli di 5 stampa “Buzz” al post del numero
 //Per i numeri che sono sia multipli di 3 che di 5 stampa “FizzBuzz” al posto del numero
+
+
 //- dividi il numero per 3 e 5 e ottieni il resto all'interno di due variabili
         let x = nResult % 3; //number
         let y = nResult % 5; //number
@@ -55,30 +74,47 @@
 
 
 
-//ALTRIMENTI stampa il numero normalmente
-      console.log(nResult)
-    
+//Stampa il risultato in console
+        console.log(nResult)
 
 
-//BONUS 1
-//crea una variabile da usare come contenitore in html
-        let displayElement = document.querySelector('.table')
 
-//crea nel DOM un elemento div con la classe container
 
-        const containerElement = document.createElement('div')
+//************BONUS 1B *********************/
+
+//crea una variabile da usare come list item in html
+        let displayLi = document.querySelector('.numbers'); //string
+
+//crea nel DOM un elemento li
+
+        const liElement = document.createElement('li'); //string
 	    
 
-//assegna all'elemento div la classe "container"
+//assegna all'elemento li la classe "items"
 
-        containerElement.classList.add('container')
-//inserisci nel container il risultato n
-	    containerElement.innerHTML = nResult
+        liElement.classList.add('col')
+
+
+//assegna a li il risultato n
+        liElement.innerHTML = nResult;
 
 //fai sì che il risultato n compaia nell'html
-        displayElement.append(containerElement)
+        displayLi.append(liElement)
 
+//BONUS 2
+//rendi rosse le caselle FizzBuzz
+        if(nResult === "FizzBuzz"){
+            liElement.classList.add('red')
+        }
+//rendi verdi le caselle Fizz
+        if(nResult === "Fizz"){
+            liElement.classList.add('green')
+        }
 
-        console.dir(containerElement)
+//rendi verdi le caselle Fizz
+        if(nResult === "Buzz"){
+            liElement.classList.add('blue')
+        }
+
 
     }

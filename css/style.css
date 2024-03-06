@@ -1,0 +1,37 @@
+.table ul li {
+    background-color: rgba(255, 140, 0, 0.69);
+    color: white;
+    list-style: none;
+
+}
+
+.table li {
+    border: 1px solid rgb(41, 41, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+header {
+    background-color: rgb(41, 41, 45);
+    color: white;
+}
+
+#app{
+    height: 100vh;
+    background-color: rgb(0, 85, 85);
+}
+
+/* colors */
+.red {
+    background-color: rgb(212, 24, 24) !important;
+}
+
+.green {
+    background-color: rgb(38, 168, 38) !important;
+}
+
+.blue {
+    background-color: rgb(39, 39, 148) !important;
+}
