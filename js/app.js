@@ -13,7 +13,7 @@
         containerElement.classList.add('container')
 
 //fai sì che il risultato n compaia nell'html
-    //-crea una ul che possa contenere i li con i nResult
+    //-crea una ul che possa contenere i li con al loro interno nResult
         containerElement.innerHTML = `<ul class="numbers py-4 row gap-2"></ul>`
     //-fai apparire il containter con al suo interno l'ul in html
         displayElement.append(containerElement)
@@ -45,14 +45,13 @@
 //Per i numeri che sono sia multipli di 3 che di 5 stampa “FizzBuzz” al posto del numero
 
 
-//- dividi il numero per 3 e 5 e ottieni il resto all'interno di due variabili
+//- dividi il numero per 3 e 5 e ottieni il resto (%) all'interno di due variabili
         let x = nResult % 3; //number
         let y = nResult % 5; //number
 
 //- se il risultato (x = numero % 3) è 0 allora è divisibile per 3
 //- se il risultato (y = numero % 5) è 0 allora è divisibile per 5
 
-//-***RICORDA CHE IL CODICE VIENE LETTO A CASCATA***
 
 //- SE il numero è divisibile per 3 && per 5 stampa "fizzBuzz" al posto del numero
         if(x === 0 && y === 0){
@@ -90,12 +89,12 @@
         const liElement = document.createElement('li'); //string
 	    
 
-//assegna all'elemento li la classe "items"
+//assegna all'elemento li la classe "col"
 
         liElement.classList.add('col')
 
 
-//assegna a li il risultato n
+//assegna a li, il risultato n
         liElement.innerHTML = nResult;
 
 //fai sì che il risultato n compaia nell'html
