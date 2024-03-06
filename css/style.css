@@ -18,6 +18,10 @@ header {
     color: white;
 }
 
+header i {
+    font-size: 50px;
+}
+
 #app{
     height: 100vh;
     background-color: rgb(0, 85, 85);
@@ -35,3 +39,4 @@ header {
 .blue {
     background-color: rgb(39, 39, 148) !important;
 }
+
