@@ -29,7 +29,7 @@
 
 //- crea il ciclo for in modo che la variabile i si ripeta n volte
 
-    for(let i = 0; i < 100; i++){
+    for(let i = 0; i < n; i++){
 
 //- assicurati che la variabile i inizi da 1 e finisca con 100
     //- crea una variabile che contenga i + 1
